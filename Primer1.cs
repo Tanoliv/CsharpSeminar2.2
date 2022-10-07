@@ -1,17 +1,8 @@
-﻿//Найти большее число в случайно выбранном.
+﻿//Программа выводит вторую цифру трёхзначного числа.
 
-int num = new Random().Next(10, 100);
+int num = new Random().Next(100, 999);
 
 int num1 = num/10;
-int num2 = num%10;
-int max = num1;
+int nam2 = num1%10;
 
-if(num2< max){
-    max = num1;
-}
-
-else{
-    max = num2;
-}
-
-Console.WriteLine($"В числе {num} max число {max}");
+Console.WriteLine($"Вторая цифра числа {num} => {nam2}");
